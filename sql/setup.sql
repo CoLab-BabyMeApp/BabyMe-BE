@@ -14,6 +14,7 @@ CREATE TABLE daycares (
     name TEXT NOT NULL,
     street_address TEXT NOT NULL,
     state TEXT NOT NULL,
-    image TEXT NOT NULL
+    image TEXT NOT NULL,
+    phone_number TEXT NOT NULL
 );
 
