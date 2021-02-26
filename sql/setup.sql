@@ -10,7 +10,6 @@ CREATE TABLE users (
 
 CREATE TABLE daycares (
     id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-    user_id BIGINT REFERENCES users(id),
     name TEXT NOT NULL,
     street_address TEXT NOT NULL,
     state TEXT NOT NULL,
