@@ -1,8 +1,5 @@
-const Daycare = require('../lib/models/Daycare');
-
 module.exports = [
   {
-    id: 1,
     name: 'Weinacker\'s Montessori School',
     street_address: '227 Hillcrest Road',
     city: 'Mobile',
@@ -20,7 +17,6 @@ module.exports = [
     covid_plan: true
   },
   {
-    id: 2,
     name: 'Jubilee Child Care Center & Preschool',
     street_address: '6631 Wall Street',
     city: 'Mobile',
@@ -38,7 +34,6 @@ module.exports = [
     covid_plan: false
   },
   {
-    id: 3,
     name: 'Carmen\’s Child Care & Learning Center',
     street_address: '1361 Springhill Avenue',
     city: 'Mobile',
@@ -56,7 +51,6 @@ module.exports = [
     covid_plan: false
   },
   {
-    id: 4,
     name: 'Cadence Academy Preschool',
     street_address: '7733 Southeast 13th Avenue',
     city: 'Portland',
@@ -74,7 +68,6 @@ module.exports = [
     covid_plan: true
   },
   {
-    id: 5,
     name: 'Downtown Portland KinderCare',
     street_address: '227 Hillcrest Road',
     city: 'Portland',
@@ -92,7 +85,6 @@ module.exports = [
     covid_plan: true
   },
   {
-    id: 6,
     name: 'Primrose School of Silicon Forest',
     street_address: '7296 NE Imbrie Drive',
     city: 'Portland',
@@ -110,7 +102,6 @@ module.exports = [
     covid_plan: true
   },
   {
-    id: 7,
     name: 'Marji\'s House',
     street_address: '5214 35th Ave SW',
     city: 'Seattle',
@@ -128,7 +119,6 @@ module.exports = [
     covid_plan: false
   },
   {
-    id: 8,
     name: 'KidsCentre',
     street_address: '99 Spring St',
     city: 'Seattle',
@@ -146,10 +136,9 @@ module.exports = [
     covid_plan: true
   },
   {
-    id: 9,
     name: 'Green Tree Early Childhood Center',
     street_address: '1200 6th Avenue, Suite 200',
-    city: 'SEattle',
+    city: 'Seattle',
     state: 'WA',
     zip_code: '98101',
     image: 'https://greentreechildcare.com/wp-content/uploads/2017/11/today-022.jpg',
@@ -163,4 +152,4 @@ module.exports = [
     snacks: true,
     covid_plan: true
   }
-]
+];

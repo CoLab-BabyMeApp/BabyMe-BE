@@ -1,24 +1,24 @@
 const Daycare = require('../lib/models/Daycare');
+const daycareData = require('../data/daycareData');
 
-const seed = async ({ count = 3 }) => {
-  const daycaresToCreate = [...Array(count)]
-    .map(() => ({
-      id: `${Math.floor(i / 2) + 1}`,
-      name: 'Weinacker\'s Montessori School',
-      street_address: '227 Hillcrest Road',
-      city: 'Mobile',
-      state: 'AL',
-      zip_code: '36608',
-      image: 'https://www.weinackersmontessori.com/wp-content/uploads/2019/09/Preschool-Circle-Time.png',
-      phone_number: '251-344-8755',
-      day: true,
-      evening: true,
-      infant: true,
-      toddler: true,
-      child: true,
-      older_child: false,
-      snacks: true,
-      covid_plan: true
+const seed = async () => {
+  const daycaresToCreate = [...daycareData]
+    .map(daycare => ({
+      name: daycare.name,
+      streetAddress: daycare.street_address,
+      city: daycare.city,
+      state: daycare.state,
+      zipCode: daycare.zip_code,
+      image: daycare.image,
+      phoneNumber: daycare.phone_number,
+      day: daycare.day,
+      evening: daycare.evening,
+      infant: daycare.infant,
+      toddler: daycare.toddler,
+      child: daycare.child,
+      olderChild: daycare.older_child,
+      snacks: daycare.snacks,
+      covidPlan: daycare.covid_plan
     }));
 
   await Promise.all(daycaresToCreate.map(daycare => Daycare.insert(daycare)

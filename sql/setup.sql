@@ -6,8 +6,8 @@ CREATE TABLE daycares (
     street_address TEXT NOT NULL,
     city TEXT NOT NULL,
     state TEXT NOT NULL,
-    zipcode TEXT NOT NULL,
-    image TEXT NOT NULL,
+    zip_code TEXT NOT NULL,
+    image TEXT,
     phone_number TEXT NOT NULL,
     day BOOLEAN,
     evening BOOLEAN,
@@ -18,4 +18,3 @@ CREATE TABLE daycares (
     snacks BOOLEAN,
     covid_plan BOOLEAN
 );
-
