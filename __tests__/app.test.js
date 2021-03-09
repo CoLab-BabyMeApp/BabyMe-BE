@@ -3,6 +3,7 @@ const pool = require('../lib/utils/pool');
 const request = require('supertest');
 const app = require('../lib/app');
 const Daycare = require('../lib/models/Daycare');
+const { exception } = require('console');
 require('../data/data_helper');
 
 describe('BabyMe routes', () => {
@@ -90,6 +91,98 @@ describe('BabyMe routes', () => {
       .get('/api/v1/daycares')
       .then(res => {
         expect(res.body).toEqual(expect.arrayContaining(daycares));
+      });
+  });
+
+  it('finds a daycare by id', async () => {
+    const daycare = await Daycare.insert({
+      name: 'Weinacker\'s Montessori School',
+      streetAddress: '227 Hillcrest Road',
+      city: 'Mobile',
+      state: 'AL',
+      zipCode: '36608',
+      image: 'https://www.weinackersmontessori.com/wp-content/uploads/2019/09/Preschool-Circle-Time.png',
+      phoneNumber: '251-344-8755',
+      day: true,
+      evening: true,
+      infant: true,
+      toddler: true,
+      child: true,
+      olderChild: false,
+      snacks: true,
+      covidPlan: true
+    });
+
+    return request(app)
+      .get(`/api/v1/daycares/${daycare.id}`)
+      .then(res => {
+        expect(res.body).toEqual(daycare);
+      });
+  });
+
+  it('updates a daycare by id', async () => {
+    const daycare = await Daycare.insert({
+      name: 'Weinacker\'s Montessori School',
+      streetAddress: '227 Hillcrest Road',
+      city: 'Mobile',
+      state: 'AL',
+      zipCode: '36608',
+      image: 'https://www.weinackersmontessori.com/wp-content/uploads/2019/09/Preschool-Circle-Time.png',
+      phoneNumber: '251-344-8755',
+      day: true,
+      evening: true,
+      infant: true,
+      toddler: true,
+      child: true,
+      olderChild: false,
+      snacks: true,
+      covidPlan: true
+    });
+
+    return request(app)
+      .put(`/api/v1/daycares/${daycare.id}`)
+      .send({
+        name: 'Weinacker\'s Montessori School',
+        streetAddress: '123 Main Street',
+        city: 'San Francisco',
+        state: 'CA',
+        zipCode: '98765',
+        image: 'https://www.weinackersmontessori.com/wp-content/uploads/2019/09/Preschool-Circle-Time.png',
+        phoneNumber: '251-344-8755',
+        day: true,
+        evening: true,
+        infant: true,
+        toddler: true,
+        child: true,
+        olderChild: false,
+        snacks: true,
+        covidPlan: true
+      });
+  });
+
+  it('deletes a daycare by id', async () => {
+    const daycare = await Daycare.insert({
+      name: 'Weinacker\'s Montessori School',
+      streetAddress: '227 Hillcrest Road',
+      city: 'Mobile',
+      state: 'AL',
+      zipCode: '36608',
+      image: 'https://www.weinackersmontessori.com/wp-content/uploads/2019/09/Preschool-Circle-Time.png',
+      phoneNumber: '251-344-8755',
+      day: true,
+      evening: true,
+      infant: true,
+      toddler: true,
+      child: true,
+      olderChild: false,
+      snacks: true,
+      covidPlan: true
+    });
+
+    return request(app)
+      .delete(`/api/v1/daycares/${daycare.id}`)
+      .then(res => {
+        expect(res.body).toEqual(daycare);
       });
   });
 });
