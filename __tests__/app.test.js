@@ -25,7 +25,8 @@ describe('BabyMe routes', () => {
         child: true,
         olderChild: false,
         snacks: true,
-        covidPlan: true
+        covidPlan: true,
+        price: '$$$'
       })
       .then(res => {
         expect(res.body).toEqual({
@@ -44,7 +45,8 @@ describe('BabyMe routes', () => {
           child: true,
           olderChild: false,
           snacks: true,
-          covidPlan: true
+          covidPlan: true,
+          price: '$$$'
         });
       });
   });
@@ -66,7 +68,8 @@ describe('BabyMe routes', () => {
         child: true,
         olderChild: false,
         snacks: true,
-        covidPlan: true
+        covidPlan: true,
+        price: '$$$'
       }),
       Daycare.insert({
         name: 'Green Tree Early Childhood Center',
@@ -83,7 +86,8 @@ describe('BabyMe routes', () => {
         child: false,
         olderChild: false,
         snacks: true,
-        covidPlan: true
+        covidPlan: true,
+        price: '$$$'
       })
     ]);
 
@@ -110,7 +114,8 @@ describe('BabyMe routes', () => {
       child: true,
       olderChild: false,
       snacks: true,
-      covidPlan: true
+      covidPlan: true,
+      price: '$$$'
     });
 
     return request(app)
@@ -136,7 +141,8 @@ describe('BabyMe routes', () => {
       child: true,
       olderChild: false,
       snacks: true,
-      covidPlan: true
+      covidPlan: true,
+      price: '$$$'
     });
 
     return request(app)
@@ -156,7 +162,8 @@ describe('BabyMe routes', () => {
         child: true,
         olderChild: false,
         snacks: true,
-        covidPlan: true
+        covidPlan: true,
+        price: '$$$'
       });
   });
 
@@ -176,7 +183,8 @@ describe('BabyMe routes', () => {
       child: true,
       olderChild: false,
       snacks: true,
-      covidPlan: true
+      covidPlan: true,
+      price: '$$$'
     });
 
     return request(app)

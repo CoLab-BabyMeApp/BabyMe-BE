@@ -14,7 +14,8 @@ module.exports = [
     child: true,
     older_child: false,
     snacks: true,
-    covid_plan: true
+    covid_plan: true,
+    price: '$$$'
   },
   {
     name: 'Jubilee Child Care Center & Preschool',
@@ -31,7 +32,8 @@ module.exports = [
     child: false,
     older_child: true,
     snacks: true,
-    covid_plan: false
+    covid_plan: false,
+    price: '$$'
   },
   {
     name: 'Carmen\’s Child Care & Learning Center',
@@ -48,7 +50,8 @@ module.exports = [
     child: true,
     older_child: true,
     snacks: true,
-    covid_plan: false
+    covid_plan: false,
+    price: '$$$'
   },
   {
     name: 'Cadence Academy Preschool',
@@ -65,7 +68,8 @@ module.exports = [
     child: true,
     older_child: true,
     snacks: true,
-    covid_plan: true
+    covid_plan: true,
+    price: '$'
   },
   {
     name: 'Downtown Portland KinderCare',
@@ -82,7 +86,8 @@ module.exports = [
     child: true,
     older_child: true,
     snacks: true,
-    covid_plan: true
+    covid_plan: true,
+    price: '$$'
   },
   {
     name: 'Primrose School of Silicon Forest',
@@ -99,7 +104,8 @@ module.exports = [
     child: true,
     older_child: true,
     snacks: true,
-    covid_plan: true
+    covid_plan: true,
+    price: '$'
   },
   {
     name: 'Marji\'s House',
@@ -116,7 +122,8 @@ module.exports = [
     child: true,
     older_child: false,
     snacks: true,
-    covid_plan: false
+    covid_plan: false,
+    price: '$'
   },
   {
     name: 'KidsCentre',
@@ -133,7 +140,8 @@ module.exports = [
     child: true,
     older_child: false,
     snacks: true,
-    covid_plan: true
+    covid_plan: true,
+    price: '$'
   },
   {
     name: 'Green Tree Early Childhood Center',
@@ -150,6 +158,7 @@ module.exports = [
     child: false,
     older_child: false,
     snacks: true,
-    covid_plan: true
+    covid_plan: true,
+    price: '$'
   }
 ];

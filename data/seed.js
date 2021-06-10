@@ -18,7 +18,8 @@ const seed = async () => {
       child: daycare.child,
       olderChild: daycare.older_child,
       snacks: daycare.snacks,
-      covidPlan: daycare.covid_plan
+      covidPlan: daycare.covid_plan,
+      price: daycare.price
     }));
 
   await Promise.all(daycaresToCreate.map(daycare => Daycare.insert(daycare)
