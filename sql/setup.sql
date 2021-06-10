@@ -16,5 +16,6 @@ CREATE TABLE daycares (
     child BOOLEAN,
     older_child BOOLEAN,
     snacks BOOLEAN,
-    covid_plan BOOLEAN
+    covid_plan BOOLEAN,
+    price TEXT NOT NULL
 );
