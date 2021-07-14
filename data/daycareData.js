@@ -15,7 +15,11 @@ module.exports = [
     older_child: false,
     snacks: true,
     covid_plan: true,
-    price: '$$$'
+    price: '$$$',
+    coordinates: [
+      '-88.190180',
+      '30.685370'
+    ]
   },
   {
     name: 'Jubilee Child Care Center & Preschool',
@@ -33,7 +37,11 @@ module.exports = [
     older_child: true,
     snacks: true,
     covid_plan: false,
-    price: '$$'
+    price: '$$',
+    coordinates: [
+      '-88.196320',
+      '30.670630'
+    ]
   },
   {
     name: 'Carmen\’s Child Care & Learning Center',
@@ -51,7 +59,11 @@ module.exports = [
     older_child: true,
     snacks: true,
     covid_plan: false,
-    price: '$$$'
+    price: '$$$',
+    coordinates: [
+      '-88.124336',
+      '30.703831'
+    ]
   },
   {
     name: 'Cadence Academy Preschool',
@@ -69,7 +81,11 @@ module.exports = [
     older_child: true,
     snacks: true,
     covid_plan: true,
-    price: '$'
+    price: '$',
+    coordinates: [
+      '-122.653150',
+      '45.468830'
+    ]
   },
   {
     name: 'Downtown Portland KinderCare',
@@ -87,7 +103,11 @@ module.exports = [
     older_child: true,
     snacks: true,
     covid_plan: true,
-    price: '$$'
+    price: '$$',
+    coordinates: [
+      '-122.679780',
+      '45.513670'
+    ]
   },
   {
     name: 'Primrose School of Silicon Forest',
@@ -105,7 +125,11 @@ module.exports = [
     older_child: true,
     snacks: true,
     covid_plan: true,
-    price: '$'
+    price: '$',
+    coordinates: [
+      '-122.679780',
+      '45.531930'
+    ]
   },
   {
     name: 'Marji\'s House',
@@ -123,7 +147,11 @@ module.exports = [
     older_child: false,
     snacks: true,
     covid_plan: false,
-    price: '$'
+    price: '$',
+    coordinates: [
+      '-122.375839',
+      '47.555149'
+    ]
   },
   {
     name: 'KidsCentre',
@@ -141,7 +169,11 @@ module.exports = [
     older_child: false,
     snacks: true,
     covid_plan: true,
-    price: '$'
+    price: '$',
+    coordinates: [
+      '-122.337640',
+      '47.605060'
+    ]
   },
   {
     name: 'Green Tree Early Childhood Center',
@@ -159,6 +191,10 @@ module.exports = [
     older_child: false,
     snacks: true,
     covid_plan: true,
-    price: '$'
+    price: '$',
+    coordinates: [
+      '-122.332080',
+      '47.608960'
+    ]
   }
 ];

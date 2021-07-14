@@ -19,7 +19,8 @@ const seed = async () => {
       olderChild: daycare.older_child,
       snacks: daycare.snacks,
       covidPlan: daycare.covid_plan,
-      price: daycare.price
+      price: daycare.price,
+      coordinates: [daycare.coordinates]
     }));
 
   await Promise.all(daycaresToCreate.map(daycare => Daycare.insert(daycare)
