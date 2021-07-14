@@ -26,7 +26,11 @@ describe('BabyMe routes', () => {
         olderChild: false,
         snacks: true,
         covidPlan: true,
-        price: '$$$'
+        price: '$$$',
+        coordinates: [
+          '-88.190180',
+          '30.685370'
+        ]
       })
       .then(res => {
         expect(res.body).toEqual({
@@ -46,7 +50,11 @@ describe('BabyMe routes', () => {
           olderChild: false,
           snacks: true,
           covidPlan: true,
-          price: '$$$'
+          price: '$$$',
+          coordinates: [
+            '-88.190180',
+            '30.685370'
+          ]
         });
       });
   });
@@ -69,7 +77,11 @@ describe('BabyMe routes', () => {
         olderChild: false,
         snacks: true,
         covidPlan: true,
-        price: '$$$'
+        price: '$$$',
+        coordinates: [
+          '-88.190180',
+          '30.685370'
+        ]
       }),
       Daycare.insert({
         name: 'Green Tree Early Childhood Center',
@@ -87,7 +99,11 @@ describe('BabyMe routes', () => {
         olderChild: false,
         snacks: true,
         covidPlan: true,
-        price: '$$$'
+        price: '$$$',
+        coordinates: [
+          '-122.332080',
+          '47.608960'
+        ]
       })
     ]);
 
@@ -115,7 +131,11 @@ describe('BabyMe routes', () => {
       olderChild: false,
       snacks: true,
       covidPlan: true,
-      price: '$$$'
+      price: '$$$',
+      coordinates: [
+        '-88.190180',
+        '30.685370'
+      ]
     });
 
     return request(app)
@@ -142,7 +162,11 @@ describe('BabyMe routes', () => {
       olderChild: false,
       snacks: true,
       covidPlan: true,
-      price: '$$$'
+      price: '$$$',
+      coordinates: [
+        '-88.190180',
+        '30.685370'
+      ]
     });
 
     return request(app)
@@ -163,7 +187,11 @@ describe('BabyMe routes', () => {
         olderChild: false,
         snacks: true,
         covidPlan: true,
-        price: '$$$'
+        price: '$$$',
+        coordinates: [
+          '-88.190180',
+          '30.685370'
+        ]
       });
   });
 
@@ -184,7 +212,11 @@ describe('BabyMe routes', () => {
       olderChild: false,
       snacks: true,
       covidPlan: true,
-      price: '$$$'
+      price: '$$$',
+      coordinates: [
+        '-88.190180',
+        '30.685370'
+      ]
     });
 
     return request(app)

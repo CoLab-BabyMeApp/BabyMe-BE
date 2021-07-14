@@ -17,5 +17,6 @@ CREATE TABLE daycares (
     older_child BOOLEAN,
     snacks BOOLEAN,
     covid_plan BOOLEAN,
-    price TEXT NOT NULL
+    price TEXT NOT NULL,
+    coordinates TEXT []
 );
